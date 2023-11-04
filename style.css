@@ -1,0 +1,329 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(46, 75, 133);
+}
+
+.note-holder {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+
+.note-device {
+    border: 3px solid black;
+    height: 200px;
+    width: 380px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+    padding: 2px;
+    background: linear-gradient(to right, rgb(228, 228, 228),rgb(68, 68, 68));
+    box-shadow: 0 0 10px black, inset 0 0 10px black;
+}
+
+.divs-holder {
+    width: 330px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.text-date-holder {
+    display: flex;
+    justify-content: space-between;
+    margin: 3px 0 3px 0;
+    width: 300px;
+}
+
+.text {
+    background: linear-gradient(to left,rgb(0, 48, 48),rgb(0, 216, 209));
+    border: 3px solid black;
+    border-radius: 5px;
+    width: 130px;
+    box-shadow: inset 0 0 9px 1px rgb(9, 205, 202);
+}
+
+.date-time-holder {
+    background: linear-gradient(to right, rgba(44, 72, 78, 0.611), rgba(3, 57, 57, 0.104));
+    height: 19px;
+    border-radius: 3px;
+    width: 150px;
+    margin-bottom: 3px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.date {
+    background: linear-gradient(to left, rgb(96, 96, 96),rgb(187, 187, 187));
+    border: 3px solid black;
+    border-radius: 5px;
+    width: 100px;
+}
+
+.time {
+    border-radius: 5px;
+    width: 50px;
+    background: linear-gradient(to right, rgb(206, 206, 206), rgb(55, 55, 55)) ;
+}
+
+.btn-create {
+    border-radius: 5px;
+    background: linear-gradient(royalblue,navy);
+    color: white;
+    border: 1px solid white;
+    margin-bottom: 10px;
+    height: 25px;
+    width:50px;
+}
+
+.themes-holder {
+    width: 60px;
+    display: flex;
+    margin-bottom: 2px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.themes {
+    height: 100px;
+    width: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.theme-btn {
+    border: 2px solid black;
+    width: 57px;
+    height: 17px;
+    border-radius: 5px;
+    font-weight: 550;
+    color: white;
+    box-shadow: 0 0 4px black;
+}
+
+.btn-wood {
+    background: linear-gradient(to right, rgb(197, 131, 65), rgb(3, 41, 111));
+}
+
+.btn-metal {
+    background: linear-gradient(to right, rgb(190, 190, 190), rgb(42, 42, 42));
+    margin: 5px 0 5px 0;
+}
+
+.btn-gold {
+    background: linear-gradient( rgb(206, 206, 206), #313130);
+}
+
+.delete-all-btn {
+    background: linear-gradient(tomato, darkred);
+    color: white;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.theme-light {
+    width: auto;
+    padding: 0 2px 0 2px;
+    margin-bottom: 2px;
+}
+
+.light {
+    border: 2px solid black;
+    border-radius: 5px;
+   background: rgb(46, 46, 46);
+    height: 20px;
+    animation: infinite;
+    animation-name: bluelight;
+    animation-timing-function: ease-out;
+    animation-duration: 2.5s;
+    border-radius: 50px;
+    width: 20px;
+    margin-bottom: 12px;
+    margin-top: 10px;
+}
+
+.blue-light-animation {
+    background: darkblue;
+    animation: infinite;
+    animation-name: bluelight;
+    animation-timing-function: ease-out;
+    animation-duration: 2.5s;
+}
+
+@keyframes bluelight {
+    0% {background:rgb(0, 0, 55);}
+    
+    100%{background: radial-gradient(rgb(228, 231, 234), rgb(8, 138, 252));}
+   
+    200% {background:rgb(0, 0, 55);}
+}
+
+.red-light-animation {
+    background: darkred;
+    animation: infinite;
+    animation-name: redlight;
+    animation-timing-function: ease-out;
+    animation-duration: 2.5s;
+}
+
+@keyframes redlight {
+    0% {background:rgb(55, 0, 0);}
+    25%{background:rgb(111, 0, 0);}
+    50%{background: rgb(176, 1, 1);}
+    75%{background: rgb(224, 6, 6);}
+    100%{background: rgb(176, 1, 1);}
+    125%{background:rgb(111, 0, 0);}
+    150%{background:rgb(55, 0, 0);}
+}
+
+.yellow-light-animation {
+    background: rgb(65, 61, 1);
+    animation: infinite;
+    animation-name: yellowlight;
+    animation-timing-function: ease-out;
+    animation-duration: 2.5s;
+}
+
+@keyframes yellowlight {
+    0% {background:rgb(54, 55, 0);}
+    25%{background:rgb(111, 105, 0);}
+    50%{background: rgb(176, 164, 1);}
+    75%{background: rgb(209, 224, 6);}
+    100%{background: rgb(176, 164, 1);}
+    125%{background:rgb(111, 105, 0) ;}
+    150% {background:rgb(54, 55, 0);}
+}
+
+.notes-list-holder {
+    border: 3px solid rgb(88, 88, 88);
+    box-shadow: 0 0 0 black, inset 0 0 7px gray;
+    border-radius: 5px;
+    width: auto;
+    min-height: 150px;
+    padding: 3px;
+    background: linear-gradient(rgb(29, 32, 35), rgb(2, 9, 27)) ;
+}
+
+.notes-list-div-holder {
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid rgb(18, 227, 242);
+    background:linear-gradient(rgb(9, 195, 220), rgb(7, 34, 39));
+    height: 70px;
+    border-radius: 5px;
+    margin-bottom: 8px;
+    padding: 0 2px 0 2px;
+}
+
+
+.btn-div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+button {
+    cursor: pointer;
+}
+
+.checked {
+    text-decoration: line-through;
+}
+
+.done {
+    background: navy;
+    color: white;
+    border-radius: 5px;
+    margin: 0 0 0 3px;
+}
+
+
+
+@media only screen and (min-width: 600px) {
+
+.note-device {
+    display: flex;
+    justify-content: space-between;
+    width: 550px;
+    padding: 0 2px 0 2px;
+}    
+
+.divs-holder {
+    width: 500px;
+}
+    
+.themes-holder {
+    width: 80px;
+    display: flex;
+    margin-bottom: 2px;
+    justify-content: space-between;
+    height: 180px;
+}
+
+.themes {
+    height: 100px;
+    width: 70px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn-create {
+    margin-bottom: 10px;
+}
+
+.theme-btn {
+    border: 2px solid black;
+    width: 60px;
+    height: 17px;
+    border-radius: 5px;
+    font-weight: 700;
+    color: white;
+    box-shadow: 0 0 4px black;
+}
+
+.theme-light {
+    width: auto;
+    padding: 0 2px 0 2px;
+    margin-bottom: 2px;
+    text-align: center;
+}
+
+.light {
+    border: 2px solid black;
+    border-radius: 5px;
+   background: rgb(46, 46, 46);
+    height: 10px;
+    margin-bottom: 15px;
+
+}
+
+    .text-date-holder {
+        width: 450px;
+    }
+
+    .text {
+        width: 230px;
+    }
+
+    .date {
+        width: 120px;
+    }
+
+    .notes-list-holder {
+        width: 450px;
+    }
+    
+}
