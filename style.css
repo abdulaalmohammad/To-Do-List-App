@@ -5,7 +5,8 @@
 }
 
 body {
-    background: rgb(46, 75, 133);
+    width: 100vh; height: 110vh;
+    background: linear-gradient(royalblue, black);
 }
 
 .note-holder {
@@ -23,7 +24,7 @@ body {
     border: 3px solid black;
     height: 200px;
     width: 380px;
-    border-radius: 5px;
+    border-radius: 15px;
     display: flex;
     justify-content: space-around;
     padding: 2px;
